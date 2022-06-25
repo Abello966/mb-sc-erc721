@@ -53,6 +53,25 @@ module.exports = {
       },
       network_id: 80001
     },
+
+    gorli: {
+      url: 'https://rpc.ankr.com/eth_goerli',
+      accounts: {
+        mnemonic: process.env.PROD_MNEMONIC,
+        initialIndex: 0
+      },
+      network_id: 5
+    },
+
+    rinkeby: {
+      url: 'https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
+      accounts: {
+        mnemonic: process.env.PROD_MNEMONIC,
+        initialIndex: 0
+      },
+      network_id: 4
+    },
+
     polygon: {
       url: process.env.POLYGON_URL,
       accounts: {
@@ -63,6 +82,8 @@ module.exports = {
       network_id: 137,
       timeout: 750000
     }
+
+
   },
   solidity: {
     compilers: [
